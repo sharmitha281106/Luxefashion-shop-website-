@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>LuxeFashion | Professional Store</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<!-- HEADER -->
+<header>
+<div class="container nav-bar">
+<div class="logo" onclick="app.router('home')">LUXE<span>STORE</span></div>
+<nav class="nav-menu">
+<a href="#" onclick="app.router('home')">Home</a>
+<a href="#" onclick="app.router('shop')">Shop</a>
+<a href="#" onclick="app.router('about')">About</a>
+</nav>
+<div class="nav-actions">
+<button class="icon-btn" onclick="app.router('cart')">
+🛒 <span id="cart-badge" class="badge">0</span>
+</button>
+<div id="user-auth-btn">
+<!-- Injected via JS -->
+</div>
+</div>
+</div>
+</header>
+
+
+<!-- MAIN CONTENT -->
+<main id="app"></main>
+
+
+<!-- FOOTER -->
+<footer style="background: var(--primary); color: white; padding: 40px 0; margin-top: 60px; text-align: center;">
+<p>&copy; 2024 LuxeStore. Professional E-Commerce Template.</p>
+</footer>
+
+
+<!-- TOAST NOTIFICATION -->
+<div id="toast">Message</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
